@@ -3,3 +3,6 @@ ro.config.low_ram=false
 ro.lmk.log_stats=true
 # IORap
 persist.device_config.runtime_native_boot.iorap_readahead_enable=true
+
+# Shutdown
+ro.build.shutdown_timeout=2
