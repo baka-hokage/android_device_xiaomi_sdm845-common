@@ -586,18 +586,6 @@ service time_daemon /vendor/bin/time_daemon
 on property:ro.vendor.radio.noril=*
     setprop ro.radio.noril ${ro.vendor.radio.noril}
 
-service seemp_healthd /vendor/bin/seemp_healthd
-    class late_start
-    user system
-    group system
-
-service chre /vendor/bin/chre
-    class late_start
-    user system
-    group system
-    socket chre seqpacket 0660 root system
-    shutdown critical
-
 # Set GPU OpenGL ES version
 on property:vendor.opengles.version=*
     setprop ro.opengles.version ${vendor.opengles.version}
