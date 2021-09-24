@@ -17,4 +17,8 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Device specific doze package -->
     <string name="config_customDozePackage">org.lineageos.settings/org.lineageos.settings.doze.DozeSettingsActivity</string>
+
+    <!-- Battery health -->
+    <string name="config_batteryRemainingCapacityNode">/sys/class/power_supply/bms/charge_full</string>
+    <string name="config_batteryDesignCapacityNode">/sys/class/power_supply/bms/charge_full_design</string>
 </resources>
